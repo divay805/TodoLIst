@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To do list</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <!-- do no write public its alredy in path  -->
+  </head>
+  <body>
+    <!-- 
+<% let number = 2 %>
+<% if(number==1){ %>
+    <h1> The day is here <%= kindDay %> </h1>
+
+<%}else{ %>
+    <h3> The day is here <%= kindDay %> </h3>
+<%}%> -->
+
+    <!-- reduced js use karni hai with no spaces  -->
+
+    <!-- Module 2  -->
+    <!-- js date format  -->
+    <!-- <h1>Today is the date <%=kindDay %> </h1> -->
+    <!-- end -->
+
+    <!-- Module 3  -->
+    <!-- <h1>Here is the list</h1>
+<ul>
+<li>cat</li>
+<li>food</li>
+<li>ben 10</li> -->
+    <!-- item got from list  -->
+
+    <!-- code: ToDo list  -->
+    <div class="box" id="heading">
+      <h1><%= kindDay %></h1>
+    </div>
+
+
+
+    <div class="box">
+      <div class="item">
+        
+ <% for(i=0;i<listItems.length;i++){%> 
+  
+     <p>  <input type="checkbox"> <%=listItems[i] %></p> 
+    <%} %> 
+      </div>
+      <form action="/" method="post">
+        <input type="text" name="listItem" placeholder="New Item" />
+        <button type="submit">+</button>
+      </form>
+    </div>
+
+    <!-- action sai pta lagta hai konse route pai request hogi  -->
+    <!-- <form action="/home" method="post">
+
+<input type="text" name="listItem">
+<button type="submit">
+Add
+</button>
+
+</form> -->
+  </body>
+</html>
